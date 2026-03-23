@@ -1,39 +1,38 @@
 package com.automation.tests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class FirstTest {
-	
-	public static void main(String[] args) throws InterruptedException {
-		
-        // Step 1: Setup ChromeDriver automatically
+
+    public static void main(String[] args) throws InterruptedException {
+
+        // Setup and open browser
         WebDriverManager.chromedriver().setup();
-        
-        // Step 2: Launch Chrome browser
-		WebDriver driver=new ChromeDriver();
-		
-        // Step 3: Maximize the window
-		driver.manage().window().maximize();
-		
-        // Step 4: Open the website
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get("https://www.saucedemo.com");
-        
-        // Step 5: Print page title in console
-        System.out.println("Page Title: "+ driver.getTitle());
-        
-        // Step 6: Wait 3 seconds so you can see the browser
+
+        // Find username field using ID and type into it
+        WebElement usernameField = driver.findElement(By.id("user-name"));
+        usernameField.sendKeys("standard_user");
+
+        // Find password field using ID and type into it
+        WebElement passwordField = driver.findElement(By.id("password"));
+        passwordField.sendKeys("secret_sauce");
+
+        // Find login button using ID and click it
+        WebElement loginButton = driver.findElement(By.id("login-button"));
+        loginButton.click();
+
+        // Print current URL to confirm login worked
+        System.out.println("Current URL: " + driver.getCurrentUrl());
+
         Thread.sleep(3000);
-        
-        // Step 7: Close browser
         driver.quit();
-        
-        
-        System.out.println("Testing Finished!!!");
-        
-
-	}
-
+        System.out.println("Test finished!");
+    }
 }
