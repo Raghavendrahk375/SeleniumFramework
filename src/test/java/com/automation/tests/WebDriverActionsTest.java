@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class WebDriverActionsTest {
 
@@ -47,13 +48,32 @@ public class WebDriverActionsTest {
         WebElement title = driver.findElement(By.className("title"));
         System.out.println("Products page heading: " + title.getText());
 
-        // Action 8: navigate back - go to previous page
+        // Action 8: Select dropdown - wait then find fresh
+     // Action 8: Select dropdown
+        Thread.sleep(2000);
+        Select select = new Select(
+            driver.findElement(By.className("product_sort_container"))
+        );
+        select.selectByVisibleText("Price (high to low)");
+        System.out.println("Selected dropdown option!");
+
+        // This line causes the error
+        //System.out.println("Selected value: " + select.getFirstSelectedOption().getText());
+        
+     // Find dropdown fresh after re-render
+        Select selectFresh = new Select(
+            driver.findElement(By.className("product_sort_container"))
+        );
+        System.out.println("Selected value: " + selectFresh.getFirstSelectedOption().getText());
+        
+        
+        // Action 9: navigate back - go to previous page
         driver.navigate().back();
         System.out.println("Navigated back!");
         System.out.println("URL after back: " + driver.getCurrentUrl());
 
         Thread.sleep(3000);
-//        driver.quit();
+        driver.quit();
         System.out.println("Test finished!");
     }
 }
