@@ -1,37 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-24T17:14:56 IST" name="Default suite" finished-at="2026-03-24T17:15:03 IST" duration-ms="7077">
+  <suite started-at="2026-03-25T12:18:22 IST" name="SauceDemo Test Suite" finished-at="2026-03-25T12:18:40 IST" duration-ms="17864">
     <groups>
     </groups>
-    <test started-at="2026-03-24T17:14:56 IST" name="Default test" finished-at="2026-03-24T17:15:03 IST" duration-ms="7077">
+    <test started-at="2026-03-25T12:18:22 IST" name="Login Tests" finished-at="2026-03-25T12:18:34 IST" duration-ms="11407">
       <class name="com.automation.pages.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.pages.LoginTest@15bb5034]" started-at="2026-03-24T17:14:56 IST" name="setUp" finished-at="2026-03-24T17:15:01 IST" duration-ms="4180" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.pages.LoginTest@15bb5034]" started-at="2026-03-25T12:18:22 IST" name="setUp" finished-at="2026-03-25T12:18:31 IST" duration-ms="8358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginTest()[pri:0, instance:com.automation.pages.LoginTest@15bb5034]" started-at="2026-03-24T17:15:01 IST" name="invalidLoginTest" finished-at="2026-03-24T17:15:01 IST" duration-ms="421" status="PASS">
+        <test-method signature="invalidLoginTest()[pri:0, instance:com.automation.pages.LoginTest@15bb5034]" started-at="2026-03-25T12:18:31 IST" name="invalidLoginTest" finished-at="2026-03-25T12:18:31 IST" duration-ms="508" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.pages.LoginTest@15bb5034]" started-at="2026-03-24T17:15:01 IST" name="tearDown" finished-at="2026-03-24T17:15:01 IST" duration-ms="230" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.pages.LoginTest@15bb5034]" started-at="2026-03-25T12:18:31 IST" name="tearDown" finished-at="2026-03-25T12:18:31 IST" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.pages.LoginTest@15bb5034]" started-at="2026-03-24T17:15:01 IST" name="setUp" finished-at="2026-03-24T17:15:03 IST" duration-ms="1529" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.pages.LoginTest@15bb5034]" started-at="2026-03-25T12:18:31 IST" name="setUp" finished-at="2026-03-25T12:18:33 IST" duration-ms="1523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest()[pri:0, instance:com.automation.pages.LoginTest@15bb5034]" started-at="2026-03-24T17:15:03 IST" name="validLoginTest" finished-at="2026-03-24T17:15:03 IST" duration-ms="398" status="PASS">
+        <test-method signature="validLoginTest()[pri:0, instance:com.automation.pages.LoginTest@15bb5034]" started-at="2026-03-25T12:18:33 IST" name="validLoginTest" finished-at="2026-03-25T12:18:33 IST" duration-ms="441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.pages.LoginTest@15bb5034]" started-at="2026-03-24T17:15:03 IST" name="tearDown" finished-at="2026-03-24T17:15:03 IST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.pages.LoginTest@15bb5034]" started-at="2026-03-25T12:18:33 IST" name="tearDown" finished-at="2026-03-25T12:18:34 IST" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automation.pages.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login Tests -->
+    <test started-at="2026-03-25T12:18:34 IST" name="Inventory Tests" finished-at="2026-03-25T12:18:40 IST" duration-ms="6432">
+      <class name="com.automation.pages.InventoryTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.pages.InventoryTest@304bb45b]" started-at="2026-03-25T12:18:34 IST" name="setUp" finished-at="2026-03-25T12:18:36 IST" duration-ms="1931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAddToCart()[pri:0, instance:com.automation.pages.InventoryTest@304bb45b]" started-at="2026-03-25T12:18:36 IST" name="verifyAddToCart" finished-at="2026-03-25T12:18:36 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.pages.InventoryTest@304bb45b]" started-at="2026-03-25T12:18:36 IST" name="tearDown" finished-at="2026-03-25T12:18:36 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.pages.InventoryTest@304bb45b]" started-at="2026-03-25T12:18:36 IST" name="setUp" finished-at="2026-03-25T12:18:38 IST" duration-ms="1765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyInventoryPageTitle()[pri:0, instance:com.automation.pages.InventoryTest@304bb45b]" started-at="2026-03-25T12:18:38 IST" name="verifyInventoryPageTitle" finished-at="2026-03-25T12:18:38 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInventoryPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.pages.InventoryTest@304bb45b]" started-at="2026-03-25T12:18:38 IST" name="tearDown" finished-at="2026-03-25T12:18:38 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.pages.InventoryTest@304bb45b]" started-at="2026-03-25T12:18:38 IST" name="setUp" finished-at="2026-03-25T12:18:40 IST" duration-ms="1770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyProductCount()[pri:0, instance:com.automation.pages.InventoryTest@304bb45b]" started-at="2026-03-25T12:18:40 IST" name="verifyProductCount" finished-at="2026-03-25T12:18:40 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductCount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.pages.InventoryTest@304bb45b]" started-at="2026-03-25T12:18:40 IST" name="tearDown" finished-at="2026-03-25T12:18:40 IST" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.pages.InventoryTest -->
+    </test> <!-- Inventory Tests -->
+  </suite> <!-- SauceDemo Test Suite -->
 </testng-results>
